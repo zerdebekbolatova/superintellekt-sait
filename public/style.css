@@ -1,0 +1,35 @@
+:root{--accent:#C2410C;--ink:#17191E;--muted:#5B5F69;--paper:#FBF8F2;--tint:#F3EEE3;--line:#E2DACB}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--paper)}
+[hidden]{display:none!important}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+.top{position:sticky;top:0;background:var(--paper);border-bottom:1px solid var(--line);z-index:5}
+.top-row{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:60px}
+.top strong{font-size:18px}
+.hero{padding:56px 0 48px}
+.kicker{margin:0 0 12px;font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1{margin:0 0 16px;font-size:clamp(34px,8vw,60px);line-height:1.08;letter-spacing:-.02em}
+h2{margin:0 0 24px;font-size:clamp(26px,5vw,36px);line-height:1.15}
+h3{margin:0 0 6px;font-size:20px}
+.lead{margin:0 0 28px;font-size:20px;color:var(--muted);max-width:40em}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;border-radius:14px;background:var(--accent);color:#fff;font-weight:700;text-decoration:none;border:2px solid var(--accent)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-small{min-height:40px;padding:0 16px;border-radius:10px;font-size:15px}
+.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.block{padding:48px 0}
+.tint{background:var(--tint)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}
+.card p{margin:0;color:var(--muted)}
+.card .quote{color:var(--ink);margin-bottom:10px}
+.card .who{font-weight:700;color:var(--ink)}
+.prices{list-style:none;margin:0;padding:0;background:#fff;border:1px solid var(--line);border-radius:18px}
+.prices li{display:flex;justify-content:space-between;gap:16px;padding:16px 22px;border-top:1px solid var(--line)}
+.prices li:first-child{border-top:0}
+.prices b{white-space:nowrap}
+.contact p{margin:0 0 6px;font-size:19px}
+.contact .actions{margin-top:22px}
+.foot{padding:28px 20px;color:var(--muted);font-size:14px}
+@media (max-width:480px){.actions .btn{width:100%}.hero{padding:40px 0 36px}}
